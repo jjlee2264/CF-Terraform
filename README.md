@@ -3,8 +3,8 @@ Creating an AWS autoscaling group for EC2 instances using Terraform.
 I have skipped some terraform scripts that would create essential resources such as VPC's, AMI, etc. to stay within the context of the challenge. The.tf's provided is using the assumption that the proper components to run them have also been created i.e. declaring security groups, machine images, VPC, subnets, etc. 
 
 asg.tf would create the auto scaling group.
-aspup.tf is an auto scale policy that would scale the instance count up if the alarm is triggered (Triggers after 600 seconds)..
-aspdown.tf is an auto scale policy that would scale the instance count down (Triggers after 600 seconds).
+aspup.tf is an auto scale policy that would scale the instance count up if the alarm is triggered.
+aspdown.tf is an auto scale policy that would scale the instance count down.
 
 URLs of resources used: 
 1.	Troubleshoot failing health checks for Application Load Balancers (amazon.com)
